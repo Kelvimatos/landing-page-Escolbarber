@@ -1,19 +1,38 @@
 .site-header {
-  position: sticky;
+  position: fixed;
   top: 0;
-  z-index: 10;
+  left: 0;
+  right: 0;
+  z-index: 100;
   width: 100%;
   min-height: var(--header-height);
-  margin-bottom: calc(-1 * var(--header-height));
-  padding: 25px clamp(20px, 3.2vw, 58px) 25px clamp(20px, 5.9vw, 106px);
+  padding: 24px clamp(20px, 3.2vw, 58px) 24px clamp(20px, 5.9vw, 106px);
   display: flex;
   align-items: center;
   justify-content: space-between;
   gap: 24px;
+  background-color: transparent;
+  transition:
+    background-color 0.3s cubic-bezier(0.16, 1, 0.3, 1),
+    border-color 0.3s cubic-bezier(0.16, 1, 0.3, 1),
+    box-shadow 0.3s cubic-bezier(0.16, 1, 0.3, 1),
+    padding 0.3s cubic-bezier(0.16, 1, 0.3, 1),
+    backdrop-filter 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.site-header.is-scrolled {
+  background-color: rgba(14, 13, 12, 0.86);
+  -webkit-backdrop-filter: blur(16px);
+  backdrop-filter: blur(16px);
+  border-bottom: 1px solid rgba(196, 154, 108, 0.22);
+  box-shadow: 0 12px 34px rgba(0, 0, 0, 0.45);
+  padding-top: 14px;
+  padding-bottom: 14px;
 }
 
 body.menu-open .site-header {
-  z-index: 20;
+  z-index: 110;
+  background-color: rgba(14, 13, 12, 0.96);
 }
 
 .brand {

@@ -1,0 +1,25 @@
+{
+  "name": "landing-page-escolbarber",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Landing page de alta conversão para a barbearia ESCOL BARBER em São Paulo, com experiência 3D Three.js e agendamento Booksy.",
+  "main": "index.html",
+  "scripts": {
+    "start": "npx --yes serve -l 3000 .",
+    "dev": "npx --yes serve -l 3000 .",
+    "check": "node -c js/animations.js js/booking.js js/chair-scrub.js js/main.js js/navigation.js js/scroll-effects.js",
+    "test": "npm run check"
+  },
+  "keywords": [
+    "escolbarber",
+    "barbearia",
+    "landing-page",
+    "threejs",
+    "gsap",
+    "booksy",
+    "frontend"
+  ],
+  "author": "ESCOL BARBER",
+  "license": "UNLICENSED"
+}
+
