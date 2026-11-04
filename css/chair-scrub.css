@@ -1,0 +1,35 @@
+/* ==========================================================================
+   CAMADA 3D CONTÍNUA (HERO -> ESSÊNCIA -> SERVIÇOS -> PORTFÓLIO)
+   ========================================================================== */
+
+@keyframes chairStageFadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+.chair-3d-stage {
+  position: fixed;
+  inset: 0;
+  z-index: 4;
+  display: grid;
+  place-items: center;
+  pointer-events: none;
+  overflow: hidden;
+  will-change: transform, opacity;
+  animation: chairStageFadeIn 1.1s cubic-bezier(0.16, 1, 0.3, 1) 0.05s both;
+}
+
+.chair-3d-stage.is-finished {
+  opacity: 0 !important;
+  visibility: hidden;
+}
+
+#chair-scrub-canvas {
+  width: 100%;
+  height: 100%;
+  display: block;
+}

@@ -1,0 +1,539 @@
+@media (max-width: 1120px) {
+  .hero-copy {
+    width: min(430px, 38vw);
+  }
+
+  .hero h1 {
+    font-size: clamp(50px, 5.2vw, 76px);
+  }
+
+  .hero-photo {
+    left: 50%;
+    width: min(580px, 48vw);
+  }
+
+  .hero-logo {
+    left: 50%;
+    width: min(46vw, 500px);
+  }
+
+  .essence-content,
+  .services .section-head,
+  .service-grid,
+  .js-pilha {
+    max-width: 60vw;
+  }
+
+  .portfolio-cube-scene {
+    --cube-w: clamp(195px, 21vw, 240px);
+    --cube-h: clamp(270px, 29vw, 330px);
+  }
+}
+
+@media (max-width: 900px) {
+  .hero {
+    min-height: 790px;
+  }
+
+  .hero-photo {
+    left: 51%;
+    right: auto;
+    transform: translateX(-50%);
+    width: 50vw;
+    height: min(74svh, 58vw);
+  }
+
+  .hero-photo img {
+    height: 100%;
+  }
+
+  .hero-logo {
+    left: 51%;
+    top: 44%;
+    width: min(44vw, 440px);
+  }
+
+  .hero-smoke__layer--ambient,
+  .hero-smoke__layer--primary {
+    width: 78vw;
+    margin-left: -39vw;
+  }
+
+  .hero-smoke__layer--secondary {
+    width: 70vw;
+    margin-left: -35vw;
+  }
+
+  .hero-copy {
+    width: min(390px, 42vw);
+  }
+
+  .hero h1 {
+    font-size: clamp(44px, 5.4vw, 66px);
+  }
+
+  .hero-description {
+    font-size: 14px;
+    max-width: 320px;
+  }
+
+  .essence {
+    min-height: 225svh;
+    margin-top: calc(-1 * max(790px, 100svh));
+  }
+
+  .essence-stage {
+    min-height: max(790px, 100svh);
+  }
+
+  .essence-content {
+    max-width: 62vw;
+  }
+
+  .essence-copy {
+    font-size: clamp(34px, 5.6vw, 52px);
+  }
+
+  .section-head,
+  .visit-intro {
+    align-items: start;
+    flex-direction: column;
+  }
+
+  .section-intro,
+  .visit-copy {
+    width: min(100%, 520px);
+    max-width: 520px;
+  }
+
+  .service-grid,
+  .js-pilha {
+    max-width: 62vw;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .portfolio-showcase-row {
+    grid-template-columns: 1fr 1fr;
+    min-height: 380px;
+  }
+
+  .portfolio-chair-dock,
+  .portfolio-cube-stage {
+    min-height: 360px;
+  }
+
+  .portfolio-cube-scene {
+    --cube-w: clamp(180px, 22vw, 220px);
+    --cube-h: clamp(250px, 30vw, 305px);
+  }
+
+  .space-showcase {
+    grid-template-columns: 1fr;
+    gap: 24px;
+  }
+
+  .space-photo-frame {
+    min-height: 440px;
+  }
+}
+
+@media (max-width: 768px) {
+  .hero-photo {
+    display: none !important;
+  }
+
+  .nav-wrap,
+  .menu-toggle,
+  .main-nav {
+    display: none !important;
+  }
+
+  .brand-name {
+    font-size: clamp(20px, 5.6vw, 24px);
+    letter-spacing: 0.12em;
+  }
+
+  .brand-name small {
+    padding-top: 5px;
+    font-size: clamp(9px, 2.5vw, 10.5px);
+    letter-spacing: 0.25em;
+  }
+}
+
+@media (max-width: 640px) {
+  :root {
+    --page-pad: 20px;
+    --radius: 18px;
+    --header-height: 77px;
+    --scroll-offset: 72px;
+  }
+
+  .hero {
+    min-height: 100svh;
+  }
+
+  .site-header {
+    padding-top: 18px;
+    padding-bottom: 16px;
+  }
+
+  .header-cta,
+  .nav-wrap,
+  .menu-toggle,
+  .main-nav {
+    display: none !important;
+  }
+
+  .hero-photo {
+    display: none !important;
+  }
+
+  .hero-smoke--front {
+    height: 44%;
+  }
+
+  .hero-smoke__layer--ambient,
+  .hero-smoke__layer--primary {
+    left: 50%;
+    right: auto;
+    width: 125vw;
+    margin-left: -62.5vw;
+  }
+
+  .hero-smoke__layer--secondary {
+    left: 50%;
+    right: auto;
+    width: 115vw;
+    margin-left: -57.5vw;
+  }
+
+  .hero-smoke__layer--mist {
+    left: -10vw;
+    right: -10vw;
+  }
+
+  .hero-logo {
+    --hero-logo-opacity: 0.26;
+    left: 50%;
+    top: 72%;
+    width: min(68vw, 290px);
+    opacity: var(--hero-logo-opacity);
+  }
+
+  .hero-main {
+    align-items: flex-start;
+    padding-top: 8px;
+    padding-bottom: clamp(220px, 38svh, 320px);
+  }
+
+  .hero-copy {
+    width: 100%;
+    max-width: 500px;
+    padding-top: 0;
+  }
+
+  .hero h1 {
+    max-width: 100%;
+    font-size: clamp(36px, min(10.8vw, 6.2svh), 58px);
+    line-height: 0.9;
+  }
+
+  .hero-description {
+    max-width: 345px;
+    margin: clamp(8px, 1.4svh, 14px) 0 clamp(10px, 1.8svh, 16px);
+    font-size: clamp(12.5px, 1.8svh, 14px);
+    line-height: 1.5;
+  }
+
+  .hero-actions {
+    gap: 8px;
+    flex-wrap: wrap;
+  }
+
+  .button {
+    min-height: clamp(42px, 5.6svh, 48px);
+    padding: 0 16px;
+    font-size: 12px;
+  }
+
+  .essence {
+    min-height: 215svh;
+    margin-top: -100svh;
+  }
+
+  .essence-stage {
+    top: 0;
+    min-height: 100svh;
+    padding: 48px var(--page-pad);
+  }
+
+  .essence-content {
+    max-width: 100%;
+  }
+
+  .essence-label {
+    margin-bottom: 27px;
+    font-size: 9px;
+  }
+
+  .essence-copy {
+    font-size: clamp(34px, 9.6vw, 48px);
+    line-height: 1.18;
+    letter-spacing: -0.06em;
+  }
+
+  .essence-signoff {
+    margin-top: 35px;
+    font-size: 9px;
+  }
+
+  .services {
+    padding-top: 78px;
+    padding-bottom: 82px;
+  }
+
+  .section-head {
+    gap: 20px;
+    margin-bottom: 27px;
+  }
+
+  .section-title {
+    margin-top: 15px;
+    font-size: clamp(43px, 12vw, 62px);
+  }
+
+  .section-intro {
+    font-size: 13px;
+  }
+
+  .service-filters {
+    gap: 6px;
+    margin-bottom: 15px;
+  }
+
+  .filter-button {
+    min-height: 35px;
+    padding: 0 12px;
+    font-size: 10px;
+  }
+
+  .services .section-head {
+    max-width: 100%;
+  }
+
+  .service-grid,
+  .js-pilha {
+    max-width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 0;
+  }
+
+  .service-card,
+  .js-pilha .folha {
+    top: 84px;
+    min-height: 184px;
+    margin-bottom: 16px;
+    padding: 20px;
+  }
+
+  .service-card h3 {
+    max-width: 85%;
+    margin: 23px 0 15px;
+    font-size: 26px;
+  }
+
+  .service-note {
+    line-height: 1.5;
+  }
+
+  .portfolio {
+    margin-top: 70px;
+  }
+
+  .portfolio-head,
+  .portfolio-showcase .portfolio-head {
+    align-items: start;
+    flex-direction: column;
+  }
+
+  .portfolio-head p,
+  .portfolio-showcase .portfolio-subtitle {
+    font-size: 13px;
+  }
+
+  .portfolio-showcase-row {
+    grid-template-columns: 1fr;
+    gap: 24px;
+    min-height: 0;
+  }
+
+  .portfolio-chair-dock {
+    min-height: 290px;
+  }
+
+  .portfolio-cube-stage {
+    min-height: 360px;
+  }
+
+  .portfolio-cube-scene {
+    --cube-w: min(200px, 54vw);
+    --cube-h: min(280px, 75vw);
+  }
+
+  .portfolio-caption {
+    left: 11px;
+    right: 11px;
+    bottom: 11px;
+    font-size: 8px;
+  }
+
+  .chair-experience {
+    min-height: 320svh;
+  }
+
+  .chair-stage {
+    min-height: 620px;
+    padding-top: calc(var(--header-height) + 12px);
+    padding-bottom: 24px;
+  }
+
+  .chair-title {
+    font-size: clamp(28px, 8.8vw, 42px);
+  }
+
+  .chair-subtitle {
+    font-size: 13px;
+  }
+
+  .chair-callout {
+    top: auto;
+    bottom: 108px;
+    left: var(--page-pad);
+    right: var(--page-pad);
+    max-width: none;
+    padding: 14px 16px;
+  }
+
+  .chair-callout__title {
+    font-size: 17px;
+  }
+
+  .chair-callout__text {
+    font-size: 12px;
+  }
+
+  .chair-hud {
+    flex-direction: column;
+    align-items: stretch;
+    gap: 12px;
+  }
+
+  .chair-hud__progress-wrap {
+    width: 100%;
+  }
+
+  .visit {
+    padding-top: 79px;
+    padding-bottom: 48px;
+  }
+
+  .visit-intro {
+    gap: 20px;
+    margin-bottom: 27px;
+  }
+
+  .visit-title {
+    margin-top: 15px;
+    font-size: clamp(44px, 12vw, 68px);
+  }
+
+  .visit-copy {
+    font-size: 14px;
+  }
+
+  .space-showcase {
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+
+  .space-photo-frame {
+    min-height: 310px;
+  }
+
+  .space-photo-badge {
+    left: 14px;
+    right: 14px;
+    bottom: 14px;
+    font-size: 9px;
+    padding: 9px 12px;
+  }
+
+  .space-map-visual {
+    min-height: 210px;
+  }
+
+  .space-map-footer {
+    padding: 16px 18px;
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .space-map-btn,
+  .space-cta-btn {
+    width: 100%;
+  }
+
+  .space-info-card {
+    padding: 22px 20px;
+  }
+
+  .space-info-place small {
+    display: block;
+    margin-top: 4px;
+  }
+
+  .visit-footer {
+    align-items: start;
+    flex-direction: column;
+    gap: 8px;
+    padding: 24px var(--page-pad) 105px;
+  }
+
+  .footer-note {
+    text-align: left;
+  }
+
+  .mobile-booking {
+    position: fixed;
+    z-index: 8;
+    left: 12px;
+    right: 12px;
+    bottom: max(12px, env(safe-area-inset-bottom));
+    display: flex;
+    justify-content: center;
+    min-height: 52px;
+    box-shadow: 0 8px 28px rgba(0, 0, 0, 0.28);
+  }
+}
+
+@media (max-width: 400px) {
+  .hero h1 {
+    font-size: clamp(38px, 11.4vw, 48px);
+  }
+
+  .hero-actions .button {
+    width: 100%;
+    justify-content: center;
+  }
+
+  .portfolio-cube-scene {
+    --cube-w: min(180px, 52vw);
+    --cube-h: min(252px, 72vw);
+  }
+
+  .space-photo-frame {
+    min-height: 270px;
+  }
+}

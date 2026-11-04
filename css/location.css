@@ -1,0 +1,289 @@
+.visit {
+  position: relative;
+  z-index: 5;
+  padding: clamp(92px, 10vw, 148px) var(--page-pad) clamp(56px, 6vw, 88px);
+  background:
+    radial-gradient(ellipse 58% 46% at 24% 42%, rgba(196, 154, 108, 0.12), transparent 72%),
+    radial-gradient(ellipse 48% 42% at 78% 64%, rgba(157, 118, 78, 0.09), transparent 70%),
+    linear-gradient(180deg, #141312 0%, #0d0d0c 100%);
+}
+
+.visit-intro {
+  display: flex;
+  justify-content: space-between;
+  align-items: end;
+  gap: 35px;
+  margin-bottom: clamp(38px, 5vw, 56px);
+}
+
+.visit .eyebrow {
+  color: var(--accent-light);
+}
+
+.visit-title {
+  max-width: 680px;
+  margin: 16px 0 0;
+  font: 700 clamp(46px, 6.2vw, 86px) / 0.94 var(--display);
+  letter-spacing: -0.07em;
+  text-transform: uppercase;
+}
+
+.visit-title span {
+  color: var(--accent-light);
+}
+
+.visit-copy {
+  max-width: 360px;
+  margin: 0 0 6px;
+  color: rgba(247, 245, 239, 0.74);
+  font-size: clamp(15px, 1.15vw, 18px);
+  line-height: 1.65;
+}
+
+.space-showcase {
+  display: grid;
+  grid-template-columns: 0.92fr 1.08fr;
+  gap: clamp(24px, 3vw, 38px);
+  align-items: stretch;
+}
+
+/* Coluna Esquerda: Foto Real da Barbearia */
+.space-photo-card {
+  position: relative;
+  margin: 0;
+  border-radius: 22px;
+  overflow: hidden;
+  border: 1px solid rgba(223, 189, 147, 0.28);
+  background: #141311;
+  box-shadow:
+    0 28px 64px rgba(0, 0, 0, 0.52),
+    0 0 42px rgba(196, 154, 108, 0.1);
+  display: flex;
+  flex-direction: column;
+}
+
+.space-photo-frame {
+  position: relative;
+  flex: 1;
+  min-height: 560px;
+  max-height: 690px;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #11100f;
+}
+
+.space-photo-frame::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background:
+    linear-gradient(180deg, rgba(10, 9, 8, 0.08) 0%, transparent 52%, rgba(10, 9, 8, 0.68) 100%),
+    radial-gradient(ellipse 68% 54% at 50% 22%, rgba(223, 189, 147, 0.14), transparent 72%);
+  pointer-events: none;
+}
+
+.space-photo-frame img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center 54%;
+  display: block;
+  transition: transform 0.7s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.space-photo-card:hover .space-photo-frame img {
+  transform: scale(1.03);
+}
+
+.space-photo-badge {
+  position: absolute;
+  left: 22px;
+  bottom: 20px;
+  z-index: 2;
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  padding: 10px 16px;
+  border-radius: 999px;
+  background: rgba(15, 14, 13, 0.78);
+  border: 1px solid rgba(223, 189, 147, 0.32);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  color: var(--white);
+  font-size: 10px;
+  font-weight: 600;
+  letter-spacing: 0.13em;
+  text-transform: uppercase;
+}
+
+.space-photo-badge__dot {
+  width: 7px;
+  height: 7px;
+  border-radius: 50%;
+  background: var(--accent-light);
+  box-shadow: 0 0 10px var(--accent-light);
+}
+
+/* Coluna Direita: Mapa + Informações */
+.space-location-col {
+  display: flex;
+  flex-direction: column;
+  gap: 22px;
+  justify-content: space-between;
+}
+
+.space-map-card {
+  border-radius: 22px;
+  overflow: hidden;
+  border: 1px solid rgba(223, 189, 147, 0.24);
+  background: linear-gradient(160deg, #1d1b18 0%, #141311 100%);
+  box-shadow: 0 22px 48px rgba(0, 0, 0, 0.42);
+  display: flex;
+  flex-direction: column;
+}
+
+.space-map-visual {
+  position: relative;
+  display: block;
+  aspect-ratio: 16 / 9.2;
+  min-height: 290px;
+  overflow: hidden;
+  background: #181715;
+}
+
+.space-map-visual img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: 42% 46%;
+  display: block;
+  transition: transform 0.55s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.space-map-card:hover .space-map-visual img {
+  transform: scale(1.03);
+}
+
+.space-map-tag {
+  position: absolute;
+  top: 16px;
+  left: 16px;
+  padding: 8px 13px;
+  border-radius: 999px;
+  background: rgba(15, 14, 13, 0.84);
+  border: 1px solid rgba(223, 189, 147, 0.34);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  color: var(--accent-light);
+  font-size: 10px;
+  font-weight: 600;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+}
+
+.space-map-footer {
+  padding: 18px 24px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+  flex-wrap: wrap;
+  border-top: 1px solid rgba(247, 245, 239, 0.08);
+}
+
+.space-map-pin-info strong {
+  display: block;
+  color: var(--white);
+  font: 600 15px var(--display);
+  letter-spacing: 0.04em;
+}
+
+.space-map-pin-info span {
+  display: block;
+  margin-top: 4px;
+  color: rgba(247, 245, 239, 0.62);
+  font-size: 12px;
+}
+
+.space-map-btn {
+  min-height: 44px;
+  padding: 0 18px;
+  font-size: 11px;
+  letter-spacing: 0.08em;
+  border-color: rgba(223, 189, 147, 0.38);
+}
+
+.space-map-btn:hover {
+  border-color: var(--accent-light);
+  background: rgba(223, 189, 147, 0.14);
+}
+
+.space-info-card {
+  flex: 1;
+  padding: clamp(26px, 3vw, 36px);
+  border-radius: 22px;
+  border: 1px solid rgba(223, 189, 147, 0.22);
+  background: linear-gradient(155deg, #211e1a 0%, #141311 100%);
+  box-shadow: 0 22px 48px rgba(0, 0, 0, 0.38);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 18px;
+}
+
+.detail-label {
+  color: var(--accent-light);
+  font-size: 10px;
+  font-weight: 600;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+}
+
+.space-info-name {
+  margin: 10px 0 6px;
+  color: var(--white);
+  font: 700 clamp(28px, 2.8vw, 36px) / 1.05 var(--display);
+  letter-spacing: -0.04em;
+}
+
+.space-info-place {
+  margin: 0;
+  color: var(--accent-light);
+  font-size: 15px;
+  font-weight: 600;
+}
+
+.space-info-place small {
+  color: rgba(247, 245, 239, 0.56);
+  font-size: 13px;
+  font-weight: 400;
+}
+
+.space-info-invite {
+  margin: 0;
+  color: rgba(247, 245, 239, 0.82);
+  font-size: 15px;
+  line-height: 1.65;
+}
+
+.visit-actions {
+  display: flex;
+  gap: 12px;
+  flex-wrap: wrap;
+}
+
+.space-cta-btn {
+  background: linear-gradient(135deg, #dfbd93 0%, #c49a6c 100%);
+  color: #11100f;
+  font-weight: 700;
+  letter-spacing: 0.06em;
+  box-shadow: 0 12px 28px rgba(196, 154, 108, 0.22);
+}
+
+.space-cta-btn:hover {
+  background: linear-gradient(135deg, #ebd0ad 0%, #d4ab7e 100%);
+  color: #090909;
+}
+

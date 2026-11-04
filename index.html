@@ -1,0 +1,323 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#171715">
+  <meta name="description" content="Cortes, barba e cuidado no seu estilo. Conheça a Escol Barber em São Paulo e agende seu horário pelo Booksy.">
+  <title>Escol Barber</title>
+  <link rel="icon" type="image/x-icon" href="favicon.ico?v=1">
+  <link rel="shortcut icon" type="image/x-icon" href="favicon.ico?v=1">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Archivo:wght@400;500;600;700;800&family=Inter+Tight:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="css/variables.css">
+  <link rel="stylesheet" href="css/reset.css">
+  <link rel="stylesheet" href="css/global.css">
+  <link rel="stylesheet" href="css/header.css?v=13">
+  <link rel="stylesheet" href="css/hero.css?v=13">
+  <link rel="stylesheet" href="css/about.css?v=13">
+  <link rel="stylesheet" href="css/services.css?v=13">
+  <link rel="stylesheet" href="css/chair-scrub.css?v=13">
+  <link rel="stylesheet" href="css/location.css?v=13">
+  <link rel="stylesheet" href="css/footer.css">
+  <link rel="stylesheet" href="css/animations.css">
+  <link rel="stylesheet" href="css/responsive.css?v=13">
+</head>
+<body>
+  <a class="skip-link" href="#conteudo">Pular para o conteúdo</a>
+
+  <header class="site-header">
+    <a class="brand" href="#inicio" aria-label="Escol Barber — início">
+      <span class="brand-name">ESCOL BARBER<small>BARBEARIA · SÃO PAULO</small></span>
+    </a>
+    <div class="nav-wrap">
+      <nav class="main-nav" id="main-nav" aria-label="Navegação principal">
+        <a href="#inicio" aria-current="location">Início</a>
+        <a href="#servicos">Serviços</a>
+        <a href="#visite">Localização</a>
+      </nav>
+      <a class="button button--light header-cta" href="https://booksy.com/pt-br/200780_escol-barber_barbearias_1047773_sao-paulo?do=invite&amp;_branch_match_id=1637165124859577383&amp;utm_medium=merchant_customer_invite&amp;_branch_referrer=H4sIAAAAAAAAA8soKSkottLXT07J0UvKz88urtRLzs/VTw4qzbK0NC4oiUyyrytKTUstKsrMS49PKsovL04tsnXOKMrPTQUAt/s4ZjwAAAA=" target="_blank" rel="noopener noreferrer">Agendar horário <span class="arrow" aria-hidden="true">↗</span></a>
+      <button class="menu-toggle" type="button" aria-label="Abrir menu" aria-expanded="false" aria-controls="main-nav"><span aria-hidden="true"></span></button>
+    </div>
+  </header>
+
+  <main id="conteudo">
+    <section class="hero" id="inicio" aria-labelledby="hero-title">
+      <div class="hero-logo" aria-hidden="true">
+        <img src="assets/images/logo.png" alt="Logo da Escol Barber">
+      </div>
+      <div class="hero-smoke hero-smoke--back" aria-hidden="true">
+        <span class="hero-smoke__layer hero-smoke__layer--ambient"></span>
+      </div>
+      <div class="chair-3d-stage" data-chair-scrub aria-hidden="true">
+        <canvas id="chair-scrub-canvas"></canvas>
+      </div>
+      <div class="hero-photo">
+        <img src="assets/images/lucas.png?v=8" alt="Lucas, barbeiro da Escol Barber" fetchpriority="high">
+      </div>
+      <div class="hero-smoke hero-smoke--front" aria-hidden="true">
+        <span class="hero-smoke__layer hero-smoke__layer--primary"></span>
+        <span class="hero-smoke__layer hero-smoke__layer--secondary"></span>
+        <span class="hero-smoke__layer hero-smoke__layer--mist"></span>
+      </div>
+      <div class="hero-main">
+        <div class="hero-copy">
+          <h1 id="hero-title">
+            <span>SEU</span>
+            <span>PRÓXIMO</span>
+            <span class="hero-line--accent">CORTE</span>
+            <span class="hero-line--accent">COMEÇA</span>
+            <span>AQUI.</span>
+          </h1>
+          <p class="hero-description">Cabelo, barba e cuidado no seu estilo. Escolha seu serviço e encontre um horário pelo Booksy.</p>
+          <div class="hero-actions">
+            <a class="button button--light" href="https://booksy.com/pt-br/200780_escol-barber_barbearias_1047773_sao-paulo?do=invite&amp;_branch_match_id=1637165124859577383&amp;utm_medium=merchant_customer_invite&amp;_branch_referrer=H4sIAAAAAAAAA8soKSkottLXT07J0UvKz88urtRLzs/VTw4qzbK0NC4oiUyyrytKTUstKsrMS49PKsovL04tsnXOKMrPTQUAt/s4ZjwAAAA=" target="_blank" rel="noopener noreferrer">Agendar pelo Booksy <span class="arrow" aria-hidden="true">↗</span></a>
+            <a class="button button--outline" href="#servicos">Conhecer serviços <span class="arrow" aria-hidden="true">↓</span></a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="essence" id="essencia" data-text-fill-section aria-labelledby="essence-heading">
+      <div class="essence-stage">
+        <div class="essence-content">
+          <h2 class="essence-label" id="essence-heading">Nossa essência</h2>
+          <p class="essence-copy" data-text-fill>Mais do que um corte, uma experiência. Na ESCOL BARBER, estilo, precisão e personalidade se encontram para transformar sua presença.</p>
+          <p class="essence-signoff" aria-hidden="true">ESCOL BARBER · São Paulo</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="services" id="servicos" aria-labelledby="services-title">
+      <header class="section-head reveal">
+        <div>
+          <span class="eyebrow">Encontre o seu serviço</span>
+          <h2 class="section-title" id="services-title">Cuidado em cada <em>detalhe.</em></h2>
+        </div>
+        <p class="section-intro">Do corte à barba, escolha o cuidado que combina com você. Consulte os horários disponíveis e confirme sua reserva pelo Booksy.</p>
+      </header>
+
+      <div class="service-filters" role="group" aria-label="Filtrar serviços">
+        <button class="filter-button" type="button" data-filter="todos" aria-pressed="true">Todos</button>
+        <button class="filter-button" type="button" data-filter="cabelo" aria-pressed="false">Cabelo</button>
+        <button class="filter-button" type="button" data-filter="barba" aria-pressed="false">Barba</button>
+        <button class="filter-button" type="button" data-filter="combos" aria-pressed="false">Combos</button>
+      </div>
+
+      <div class="service-grid js-pilha">
+        <article class="service-card folha f1" data-category="cabelo">
+          <header class="service-topline">
+            <span>Acabamento no seu estilo</span>
+            <span class="service-number">01</span>
+          </header>
+          <div>
+            <h3>Corte</h3>
+            <footer class="service-bottom">
+              <div>
+                <strong class="service-price">R$ 40</strong>
+                <span class="service-time">30 min</span>
+              </div>
+              <a class="service-book" href="https://booksy.com/pt-br/200780_escol-barber_barbearias_1047773_sao-paulo?do=invite&amp;_branch_match_id=1637165124859577383&amp;utm_medium=merchant_customer_invite&amp;_branch_referrer=H4sIAAAAAAAAA8soKSkottLXT07J0UvKz88urtRLzs/VTw4qzbK0NC4oiUyyrytKTUstKsrMS49PKsovL04tsnXOKMrPTQUAt/s4ZjwAAAA=" target="_blank" rel="noopener noreferrer" aria-label="Agendar corte pelo Booksy">↗</a>
+            </footer>
+          </div>
+        </article>
+
+        <article class="service-card folha f2" data-category="combos">
+          <header class="service-topline">
+            <span>Um cuidado completo</span>
+            <span class="service-number">02</span>
+          </header>
+          <div>
+            <h3>Corte e Barba</h3>
+            <footer class="service-bottom">
+              <div>
+                <strong class="service-price">R$ 65</strong>
+                <span class="service-time">50 min</span>
+              </div>
+              <a class="service-book" href="https://booksy.com/pt-br/200780_escol-barber_barbearias_1047773_sao-paulo?do=invite&amp;_branch_match_id=1637165124859577383&amp;utm_medium=merchant_customer_invite&amp;_branch_referrer=H4sIAAAAAAAAA8soKSkottLXT07J0UvKz88urtRLzs/VTw4qzbK0NC4oiUyyrytKTUstKsrMS49PKsovL04tsnXOKMrPTQUAt/s4ZjwAAAA=" target="_blank" rel="noopener noreferrer" aria-label="Agendar corte e barba pelo Booksy">↗</a>
+            </footer>
+          </div>
+        </article>
+
+        <article class="service-card folha f3" data-category="cabelo">
+          <header class="service-topline">
+            <span>Mais tempo para os detalhes</span>
+            <span class="service-number">03</span>
+          </header>
+          <div>
+            <h3>Corte Premium</h3>
+            <footer class="service-bottom">
+              <div>
+                <strong class="service-price">A partir de R$ 50</strong>
+                <span class="service-time">40 min</span>
+              </div>
+              <a class="service-book" href="https://booksy.com/pt-br/200780_escol-barber_barbearias_1047773_sao-paulo?do=invite&amp;_branch_match_id=1637165124859577383&amp;utm_medium=merchant_customer_invite&amp;_branch_referrer=H4sIAAAAAAAAA8soKSkottLXT07J0UvKz88urtRLzs/VTw4qzbK0NC4oiUyyrytKTUstKsrMS49PKsovL04tsnXOKMrPTQUAt/s4ZjwAAAA=" target="_blank" rel="noopener noreferrer" aria-label="Agendar corte premium pelo Booksy">↗</a>
+            </footer>
+          </div>
+        </article>
+
+        <article class="service-card folha f4" data-category="barba">
+          <header class="service-topline">
+            <span>Alinhamento e cuidado</span>
+            <span class="service-number">04</span>
+          </header>
+          <div>
+            <h3>Barba</h3>
+            <footer class="service-bottom">
+              <div>
+                <strong class="service-price">R$ 35</strong>
+                <span class="service-time">20 min</span>
+              </div>
+              <a class="service-book" href="https://booksy.com/pt-br/200780_escol-barber_barbearias_1047773_sao-paulo?do=invite&amp;_branch_match_id=1637165124859577383&amp;utm_medium=merchant_customer_invite&amp;_branch_referrer=H4sIAAAAAAAAA8soKSkottLXT07J0UvKz88urtRLzs/VTw4qzbK0NC4oiUyyrytKTUstKsrMS49PKsovL04tsnXOKMrPTQUAt/s4ZjwAAAA=" target="_blank" rel="noopener noreferrer" aria-label="Agendar barba pelo Booksy">↗</a>
+            </footer>
+          </div>
+        </article>
+
+        <article class="service-card folha f5" data-category="barba">
+          <header class="service-topline">
+            <span>Toalha quente</span>
+            <span class="service-number">05</span>
+          </header>
+          <div>
+            <h3>Barboterapia</h3>
+            <footer class="service-bottom">
+              <div>
+                <strong class="service-price">R$ 40</strong>
+                <span class="service-time">30 min</span>
+              </div>
+              <a class="service-book" href="https://booksy.com/pt-br/200780_escol-barber_barbearias_1047773_sao-paulo?do=invite&amp;_branch_match_id=1637165124859577383&amp;utm_medium=merchant_customer_invite&amp;_branch_referrer=H4sIAAAAAAAAA8soKSkottLXT07J0UvKz88urtRLzs/VTw4qzbK0NC4oiUyyrytKTUstKsrMS49PKsovL04tsnXOKMrPTQUAt/s4ZjwAAAA=" target="_blank" rel="noopener noreferrer" aria-label="Agendar barboterapia pelo Booksy">↗</a>
+            </footer>
+          </div>
+        </article>
+
+        <article class="service-card folha f6" data-category="combos">
+          <header class="service-topline">
+            <span>Manutenção semanal</span>
+            <span class="service-number">06</span>
+          </header>
+          <div>
+            <h3>Corte e Barba Semanal</h3>
+            <footer class="service-bottom">
+              <div>
+                <strong class="service-price">R$ 60</strong>
+                <span class="service-time">50 min</span>
+              </div>
+              <a class="service-book" href="https://booksy.com/pt-br/200780_escol-barber_barbearias_1047773_sao-paulo?do=invite&amp;_branch_match_id=1637165124859577383&amp;utm_medium=merchant_customer_invite&amp;_branch_referrer=H4sIAAAAAAAAA8soKSkottLXT07J0UvKz88urtRLzs/VTw4qzbK0NC4oiUyyrytKTUstKsrMS49PKsovL04tsnXOKMrPTQUAt/s4ZjwAAAA=" target="_blank" rel="noopener noreferrer" aria-label="Agendar corte e barba semanal pelo Booksy">↗</a>
+            </footer>
+          </div>
+        </article>
+      </div>
+
+      <p class="service-note">Valores e horários podem mudar. Confira as opções atualizadas ao agendar pelo Booksy.</p>
+
+      <section class="portfolio" id="portfolio" aria-labelledby="portfolio-title">
+        <header class="portfolio-head reveal">
+          <div>
+            <span class="eyebrow">Portfólio</span>
+            <h3 id="portfolio-title">NOSSO TRABALHO</h3>
+          </div>
+          <p>Precisão, estilo e personalidade em cada corte.</p>
+        </header>
+
+        <div class="portfolio-showcase-row">
+          <div class="portfolio-chair-dock" id="portfolio-chair-dock" aria-hidden="true">
+            <span class="portfolio-chair-pedestal"></span>
+          </div>
+
+          <div class="portfolio-cube-stage">
+            <div class="portfolio-cube-scene" aria-label="Carrossel 3D giratório com fotos dos cortes realizados na Escol Barber">
+              <div class="portfolio-cube" id="portfolio-cube">
+                <figure class="portfolio-cube__face portfolio-cube__face--front">
+                  <img src="assets/images/corte-1.jpg?v=12" alt="Corte degradê com topete pompadour na Escol Barber">
+                </figure>
+                <figure class="portfolio-cube__face portfolio-cube__face--right">
+                  <img src="assets/images/corte-2.jpg?v=12" alt="Corte afro taper fade e barba alinhada na Escol Barber">
+                </figure>
+                <figure class="portfolio-cube__face portfolio-cube__face--back">
+                  <img src="assets/images/corte-3.jpg?v=12" alt="Corte degradê moderno com topo texturizado na Escol Barber">
+                </figure>
+                <figure class="portfolio-cube__face portfolio-cube__face--left">
+                  <img src="assets/images/corte-4.jpg?v=12" alt="Barba desenhada na navalha e degradê na Escol Barber">
+                </figure>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </section>
+
+    <section class="visit" id="visite" aria-labelledby="visit-title">
+      <header class="visit-intro reveal">
+        <div>
+          <span class="eyebrow">Barbearia &amp; Localização</span>
+          <h2 class="visit-title" id="visit-title">NOSSO <span>ESPAÇO</span></h2>
+        </div>
+        <p class="visit-copy">Um ambiente preparado para cuidar do seu estilo.</p>
+      </header>
+
+      <div class="space-showcase">
+        <figure class="space-photo-card reveal">
+          <div class="space-photo-frame">
+            <img src="assets/images/espaco-escol-barber.jpg?v=7" alt="Interior real da barbearia ESCOL BARBER em São Paulo" loading="lazy">
+          </div>
+          <figcaption class="space-photo-badge">
+            <span class="space-photo-badge__dot" aria-hidden="true"></span>
+            Ambiente Climatizado &amp; Exclusivo · ESCOL BARBER
+          </figcaption>
+        </figure>
+
+        <div class="space-location-col">
+          <article class="space-map-card reveal" aria-label="Mapa de localização da ESCOL BARBER em Heliópolis, São Paulo">
+            <a class="space-map-visual" href="https://www.google.com/maps/search/?api=1&amp;query=ESCOL+BARBER+Itamarati+Brasileiro+12%2C+04236-160%2C+Heli%C3%B3polis%2C+S%C3%A3o+Paulo" target="_blank" rel="noopener noreferrer" aria-label="Abrir localização da ESCOL BARBER no Google Maps">
+              <img src="assets/images/mapa-escol-barber.jpg?v=7" alt="Mapa mostrando a localização da ESCOL BARBER em Heliópolis, São Paulo" loading="lazy">
+              <span class="space-map-tag">Heliópolis · São Paulo</span>
+            </a>
+            <div class="space-map-footer">
+              <div class="space-map-pin-info">
+                <strong>ESCOL BARBER</strong>
+                <span>Itamarati Brasileiro, 12 · Heliópolis, São Paulo — SP</span>
+              </div>
+              <a class="button button--outline space-map-btn" href="https://www.google.com/maps/search/?api=1&amp;query=ESCOL+BARBER+Itamarati+Brasileiro+12%2C+04236-160%2C+Heli%C3%B3polis%2C+S%C3%A3o+Paulo" target="_blank" rel="noopener noreferrer">VER NO GOOGLE MAPS <span class="arrow" aria-hidden="true">↗</span></a>
+            </div>
+          </article>
+
+          <article class="space-info-card reveal" aria-labelledby="location-label">
+            <div class="space-info-header">
+              <span class="detail-label" id="location-label">Sua próxima visita</span>
+              <h3 class="space-info-name">ESCOL BARBER</h3>
+              <p class="space-info-place">Heliópolis — São Paulo/SP <small>· Itamarati Brasileiro, 12 (CEP 04236-160)</small></p>
+            </div>
+
+            <p class="space-info-invite">Venha conhecer nosso espaço e renovar seu estilo.</p>
+
+            <div class="visit-actions">
+              <a class="button button--light space-cta-btn" href="https://booksy.com/pt-br/200780_escol-barber_barbearias_1047773_sao-paulo?do=invite&amp;_branch_match_id=1637165124859577383&amp;utm_medium=merchant_customer_invite&amp;_branch_referrer=H4sIAAAAAAAAA8soKSkottLXT07J0UvKz88urtRLzs/VTw4qzbK0NC4oiUyyrytKTUstKsrMS49PKsovL04tsnXOKMrPTQUAt/s4ZjwAAAA=" target="_blank" rel="noopener noreferrer">AGENDAR MEU CORTE <span class="arrow" aria-hidden="true">↗</span></a>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="visit-footer">
+    <span class="footer-brand">ESCOL BARBER</span>
+    <span>Itamarati Brasileiro, 12 · São Paulo — SP</span>
+    <span class="footer-note">Agendamentos pelo Booksy</span>
+  </footer>
+
+  <a class="button button--light mobile-booking" href="https://booksy.com/pt-br/200780_escol-barber_barbearias_1047773_sao-paulo?do=invite&amp;_branch_match_id=1637165124859577383&amp;utm_medium=merchant_customer_invite&amp;_branch_referrer=H4sIAAAAAAAAA8soKSkottLXT07J0UvKz88urtRLzs/VTw4qzbK0NC4oiUyyrytKTUstKsrMS49PKsovL04tsnXOKMrPTQUAt/s4ZjwAAAA=" target="_blank" rel="noopener noreferrer">Agendar pelo Booksy <span class="arrow" aria-hidden="true">↗</span></a>
+
+  <script src="js/vendor/three.min.js" defer></script>
+  <script src="js/vendor/gsap.min.js" defer></script>
+  <script src="js/vendor/ScrollTrigger.min.js" defer></script>
+  <script src="js/navigation.js" defer></script>
+  <script src="js/scroll-effects.js?v=11" defer></script>
+  <script src="js/chair-scrub.js?v=11" defer></script>
+  <script src="js/animations.js" defer></script>
+  <script src="js/booking.js" defer></script>
+  <script src="js/main.js" defer></script>
+</body>
+</html>

@@ -1,0 +1,51 @@
+:root {
+  /* Cores principais — Identidade Escol Barber */
+  --ink: #171715;
+  --ink-deep: #090909;
+  --ink-soft: #22221f;
+  --ink-card: #292925;
+  --paper: #eeece5;
+  --paper-deep: #e4e1d8;
+  --white: #f7f5ef;
+
+  /* Tons neutros e textos secundários */
+  --muted: #aaa99f;
+  --dark-muted: #77766f;
+  --essence-dim: #63635f;
+  --essence-label: #b4b6b8;
+  --service-eyebrow: #716d62;
+  --service-intro: #68665f;
+  --service-filter: #5e5b54;
+  --service-meta: #7d796e;
+  --service-time: #77736b;
+  --service-note: #79766e;
+  --portfolio-copy: #747169;
+  --portfolio-placeholder: #c9c3b6;
+
+  /* Tons de bronze e dourado */
+  --accent: #c49a6c;
+  --accent-light: #dfbd93;
+  --accent-bronze: #9d764e;
+  --accent-gold-dark: #92704d;
+  --accent-book-hover: #8f6c49;
+  --accent-number: #a08d74;
+
+  /* Bordas e divisores */
+  --line: rgba(247, 245, 239, 0.16);
+  --line-dark: rgba(23, 23, 21, 0.14);
+
+  /* Tipografia */
+  --display: "Archivo", sans-serif;
+  --body: "Inter Tight", sans-serif;
+
+  /* Espaçamentos e dimensões */
+  --page-pad: clamp(20px, 5.1vw, 76px);
+  --header-height: 94px;
+  --scroll-offset: 84px;
+
+  /* Raios de borda */
+  --radius: 22px;
+  --radius-card: 15px;
+  --radius-pill: 999px;
+}
+
